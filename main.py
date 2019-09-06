@@ -26,7 +26,7 @@ with open(filepath) as fp:
         line = fp.readline()
         password = line.strip()
         if len(password) >= 6:
-            flag = post_req('utsho', password)
+            flag = post_req('seed', password)
             if flag:
                 found = True
                 print 'Correct Password %s' % password
